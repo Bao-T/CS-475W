@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="358c044f-3ebd-47d1-841a-bbcb7847d22c" name="Simulation Proj" linkedPackageId="0f10e620-67ec-44ed-8168-05d6ee9d09d5" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="2ca44811-14e2-4856-8bd2-23ae19124ca8">
+      <profileInstance Id="96a72856-cb5f-41b8-8854-7f76d213c4f2" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="f979e7fa-9d16-4e09-b922-ced6e1cc1cd8">
+      <profileInstance Id="d36996f5-4082-4795-9858-eb04f28f88fe" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="96c3157a-5bca-4fd9-b6ef-dc81f6ea9f71" name="PCB" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="bfcd6629-120a-4347-b2b5-05f6a1c2203e" />
+        <ownedAttributesInternal>
+          <property Id="075b7ef1-4639-42fc-bd1c-673a2a1eff3d" name="priority" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7aea2c8f-8df9-4ef6-934d-93fb738a51f9" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="2cb62283-ea27-4ba5-8578-a16156b52949" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+          <property Id="b01320dc-1305-4832-a2e0-63eb75bd3931" name="cpuBurstT" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e3dad53c-dc58-4f5a-9705-87d530b92eea" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="2823133e-8fa9-41c1-8c90-cdbd3fe5e48f" LastKnownName="vector&lt;double&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="ca8ac1e8-7063-46f9-82d2-eac1d9f28a5c" name="ioBurstT" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8b93732f-567b-401a-b3c1-a1da67559b37" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="2823133e-8fa9-41c1-8c90-cdbd3fe5e48f" LastKnownName="vector&lt;double&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="a5c32342-d094-4028-9ccf-38e479a7613b" name="programCounter" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="690e004d-b7bc-4077-b45b-28bf0128239e" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="85d46531-ebf1-4788-b2f3-168e26f5662b" LastKnownName="long int" />
+            </type_NamedElement>
+          </property>
+          <property Id="b9996120-aefe-452c-b20a-e07dda9b7668" name="timeLimit" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a70a94a7-c01a-4bd4-8ecb-96900c3bec1c" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c6590a78-6c08-46ff-b0d0-8cc3af609639" LastKnownName="double" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="c6b28b49-cdda-44e5-90e6-f8407f62b6c2" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="0cb11bf0-9d81-48f1-956d-9cd5afd5dcda" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="2823133e-8fa9-41c1-8c90-cdbd3fe5e48f" name="vector&lt;double&gt;" isAbstract="false" isLeaf="false" cachedFullName="vector&lt;double&gt;">
+        <elementDefinition Id="24d446be-47cc-4160-a64e-08da20e86651" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="62cdff16-044e-47d0-83d6-b5517761d8cb" name="PEC" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="160aad4b-4a58-473d-980e-6a1ad227e33d" />
+        <targetEnds>
+          <association Id="ca608644-4e86-4d41-901f-33459027a7a4" isDerived="false" sourceEndRoleName="PEC" targetEndRoleName="PCB" isLeaf="false" isAbstract="false">
+            <classMoniker Id="96c3157a-5bca-4fd9-b6ef-dc81f6ea9f71" LastKnownName="PCB" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6d85db83-4af7-4262-81be-ec73b7ab8409" name="PEC" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9668aba4-90ba-4435-885a-3bbed5472482" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ecda16a3-256e-409f-b403-3eb95b7a5f9f" name="PCB" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="ed149603-bdcf-44ea-be2e-49ac9bb54200" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9928e162-4ff8-46d4-aecc-0b7266c12345" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="c1198ea4-f344-4af8-abe6-184a90ce26b4" name="processControlBlock" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="016d3363-4478-4123-8ae2-a30775531b6f" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="d57c7d54-4055-422d-bfa5-76bf0ea4d6e4" LastKnownName="PCB" />
+            </type_NamedElement>
+          </property>
+          <property Id="3fc9d6cd-dec4-4a30-8520-1a148a1aa930" name="PID" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e16eb847-a2c1-4f42-8bbc-93ac7ec41ba8" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c6b28b49-cdda-44e5-90e6-f8407f62b6c2" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+          <property Id="d3307732-454c-473f-8654-e2dd22644edf" name="State" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="593f32bc-7bf3-452c-a6f9-d5fbf4eb01ac" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="b5e19f47-b3d0-43b9-b3d3-8b857f07c1ce" LastKnownName="enum" />
+            </type_NamedElement>
+          </property>
+          <property Id="d4cd5a2c-b411-4dcf-b1ad-328cf1f21444" name="textRegion" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="348bac98-17f1-4e96-b259-050e5ca9adad" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="1975c578-50b4-44fc-a0d3-c6fb48fe6c1d" LastKnownName="String[]" />
+            </type_NamedElement>
+          </property>
+          <property Id="14a5c483-9b57-4e5d-b3c4-f74255ce12c2" name="dataRegion" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4aa475ba-232f-41b5-82f6-a40ed1eb043d" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="d57c7d54-4055-422d-bfa5-76bf0ea4d6e4" name="PCB" isAbstract="false" isLeaf="false" cachedFullName="SimProj::PCB">
+        <elementDefinition Id="bfcd6629-120a-4347-b2b5-05f6a1c2203e" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="b5e19f47-b3d0-43b9-b3d3-8b857f07c1ce" name="enum" isAbstract="false" isLeaf="false" cachedFullName="enum">
+        <elementDefinition Id="12fb7b50-5fe0-4c27-947e-94c249511ae2" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="1975c578-50b4-44fc-a0d3-c6fb48fe6c1d" name="String[]" isAbstract="false" isLeaf="false" cachedFullName="String[]">
+        <elementDefinition Id="ed328c4e-419f-4d35-b753-466d8aa6f113" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="2cb62283-ea27-4ba5-8578-a16156b52949" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="0cb11bf0-9d81-48f1-956d-9cd5afd5dcda" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="85d46531-ebf1-4788-b2f3-168e26f5662b" name="long int" isAbstract="false" isLeaf="false" cachedFullName="long int">
+        <elementDefinition Id="dbe57cdf-2b17-4585-8efe-0b399324b734" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="c6590a78-6c08-46ff-b0d0-8cc3af609639" name="double" isAbstract="false" isLeaf="false" cachedFullName="double">
+        <elementDefinition Id="bf37b1d0-3029-4ab0-9fa7-d271689d1187" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="64883f64-6b72-467d-8348-3eb1741a60f5" name="Main" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="aacd262d-fe66-4189-817e-8a5af63be147" />
+        <targetEnds>
+          <association Id="e8bbf306-50c4-4123-aa45-1caaa5c362c1" isDerived="false" sourceEndRoleName="Main" targetEndRoleName="Generate File" isLeaf="false" isAbstract="false">
+            <classMoniker Id="be60c221-af21-4513-bde3-ee2c08a6496c" LastKnownName="Generate File" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fc4602ab-d3b6-4988-bf74-a49c086ba4ff" name="Main" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="82fd31e0-b78e-41d6-b565-7bea994ae9ab" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ba2c774d-5889-447c-8959-714d157e1402" name="Generate File" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="8b0bd0a2-ad82-4104-965b-653565bf7397" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2f319551-9aff-49db-bac9-b3538975fcd2" />
+          </association>
+          <association Id="f43c3e39-f8a1-4dd7-9003-8dd038472a4f" isDerived="false" sourceEndRoleName="Main" targetEndRoleName="PEC" isLeaf="false" isAbstract="false">
+            <classMoniker Id="62cdff16-044e-47d0-83d6-b5517761d8cb" LastKnownName="PEC" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="93604493-a0bb-4e4f-83a2-e963575e8010" name="Main" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1b6f1a89-aecb-4e20-bd6c-ce5bbb5fe205" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="359564b3-d95e-4445-8478-e0f258c2010d" name="PEC" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="79a8b85d-573b-4496-8194-fe15edea8b0b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="db3aa20a-2ba5-4cfa-87fd-8e52d1d98861" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="eb84b67f-aece-4906-8c8d-6d00b198ef65" name="processTable" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="88584666-e590-4b32-8031-12a40af4bd13" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="80457e35-8a30-49f5-8929-e1256d0f9202" LastKnownName="map &lt;int,PCB&gt;" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="80457e35-8a30-49f5-8929-e1256d0f9202" name="map &lt;int,PCB&gt;" isAbstract="false" isLeaf="false" cachedFullName="map &lt;int,PCB&gt;">
+        <elementDefinition Id="372c59bf-1835-4217-a191-1073b9b2a03f" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="be60c221-af21-4513-bde3-ee2c08a6496c" name="Generate File" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d5f08081-6c10-44a1-9f07-c0c5a8a7d863" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="0f10e620-67ec-44ed-8168-05d6ee9d09d5" name="SimProj">
+    <elementDefinition Id="c98bc793-d648-4c5b-a1c2-1a6715be3214" />
+  </package>
+</logicalClassDesignerModel>
