@@ -29,5 +29,8 @@
     <ClInclude Include="DataFileGen.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="PCB.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
