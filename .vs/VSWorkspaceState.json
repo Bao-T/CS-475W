@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\SimProj"
+    "\\SimProj",
+    "\\SimProj\\ConsoleApplication1"
   ],
-  "SelectedNode": "\\SimProj\\SimProj.sln",
+  "SelectedNode": "\\SimProj\\ConsoleApplication1\\PCB.h",
   "PreviewInSolutionExplorer": false
 }

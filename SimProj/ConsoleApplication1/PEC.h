@@ -18,7 +18,10 @@ public:
 
 	vector<int> dataRegion;
 
-
+	int returnPCB()
+	{
+		return processControlBlock;
+	}
 
 	string returntextregion()
 	{
