@@ -1,15 +1,32 @@
 #include <iostream> 
 #include <vector> 
+#include <map>
 
 class PCB {
 private:
 	int priority;
 	long int programCounter;
 	double timeLimit;
+	double arrivalTime;
 
 public:
-	std::vector <double, double> cpuBurstT;
-	std::vector <double, double> ioBurstT;
+	std::map <double, double> burstTimeMap;
+	std::vector <double> cpuBurstT;
+	std::vector <double> ioBurstT;
+
+	PCB::PCB(int p, long int pc, double tl) {
+		priority = p;
+		programCounter = pc;
+		timeLimit = tl;
+	}
+
+	void setCPUBurst(double cpu) {
+		cpuBurstT.push_back(cpu);
+	}
+
+	void setIOBurst(double io) {
+		ioBurstT.push_back(io);
+	}
 
 	int getPriority() {
 		return priority;
@@ -21,5 +38,9 @@ public:
 
 	double getTimeLimit() {
 		return timeLimit;
+	}
+
+	double getArrivalTime() {
+		return arrivalTime;
 	}
 };
