@@ -32,5 +32,8 @@
     <ClInclude Include="PCB.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="PEC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
