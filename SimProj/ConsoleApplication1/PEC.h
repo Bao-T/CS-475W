@@ -8,7 +8,6 @@ using namespace std;
 class PEC {
 
 private:
-	string textregion;
 	int PID;
 	int processControlBlock;
 
@@ -17,15 +16,11 @@ public:
 	enum State;
 
 	vector<int> dataRegion;
+	vector<string> textregion;
 
 	int returnPCB()
 	{
 		return processControlBlock;
-	}
-
-	string returntextregion()
-	{
-		return textregion;
 	}
 
 	int returnPID()
