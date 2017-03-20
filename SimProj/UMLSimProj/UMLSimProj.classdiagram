@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="aba2f3a2-3c92-49d8-b032-11204beb60cf" name="UMLSimProj" linkedPackageId="15fcc996-3a3c-4d3a-95e1-b8610efe00ee" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="ff9014de-532d-4d15-8648-5798147a83d9">
+      <profileInstance Id="09dda60f-8f9f-47da-a6e5-37063efe4383" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="dcaa8bb9-7347-46e0-94c7-88381153fbe9">
+      <profileInstance Id="1115af28-fbc6-43fb-aa54-f4340669531c" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <referencedType Id="1465d902-0495-4df4-a662-2729c71178d0" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="5dbf732c-642c-4de0-afaa-b3fc35d1208d" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="9e8341a7-62cd-44bf-93e7-755d2f9b7ee4" name="vector&lt;double&gt;" isAbstract="false" isLeaf="false" cachedFullName="vector&lt;double&gt;">
+        <elementDefinition Id="56df7dc3-b968-4475-a973-9f9b33115f83" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="ad506011-4178-403c-9a9a-5bf77df2115e" name="long int" isAbstract="false" isLeaf="false" cachedFullName="long int">
+        <elementDefinition Id="d633856a-942a-4d63-b72f-aa88d879300c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="022b3e58-b25d-4978-8fe9-cf847e96c9c7" name="double" isAbstract="false" isLeaf="false" cachedFullName="double">
+        <elementDefinition Id="6ef5bd57-8e46-4509-a2c2-5f0966c49cc4" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="e48da2bd-2f5c-4e6f-aa70-adf2ef72782d" name="map&lt;double,double&gt;" isAbstract="false" isLeaf="false" cachedFullName="map&lt;double,double&gt;">
+        <elementDefinition Id="a64fca37-8ada-4f46-b2b8-42ffe37b8f26" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="bc3d6e9b-7620-40f3-b5c0-f5cbedb3035e" name="SimProj::PCB" isAbstract="false" isLeaf="false" cachedFullName="SimProj::PCB">
+        <elementDefinition Id="9f1f74f0-d7f4-42f1-b7dc-3872a68c7e56" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="02c92afa-9c60-4681-871c-cfcb991ec697" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="5dbf732c-642c-4de0-afaa-b3fc35d1208d" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="5be87ecc-34aa-4b67-a8fc-be22629be9e4" name="enum" isAbstract="false" isLeaf="false" cachedFullName="enum">
+        <elementDefinition Id="637ec20a-6edd-4fa0-8a22-201eb3b286d1" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="8c2252df-7f96-4485-a644-0b76b56a5e30" name="String[]" isAbstract="false" isLeaf="false" cachedFullName="String[]">
+        <elementDefinition Id="6bfd7f23-3d4e-42a0-bcf5-ed39b526bacb" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="ff9916d5-c2d0-4359-810f-910c17f40f80" name="map &lt;int,*PCB&gt;" isAbstract="false" isLeaf="false" cachedFullName="map &lt;int,*PCB&gt;">
+        <elementDefinition Id="11b92dd5-ee94-48e9-b2b6-3cddace2b5f0" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="ceeb62e0-0d22-4658-8b64-af5b5750535d" name="queue&lt;*PEC&gt;" isAbstract="false" isLeaf="false" cachedFullName="queue&lt;*PEC&gt;">
+        <elementDefinition Id="600be66a-7636-447f-8e7b-de8094b8fa3d" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="6b5b3641-ef47-46a6-841e-018b28a3f342" name="*PEC[]" isAbstract="false" isLeaf="false" cachedFullName="*PEC[]">
+        <elementDefinition Id="53f544c7-2142-4fc9-86cd-7e983fa4045a" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="79ee5a71-54cc-47c8-ba85-2602605349d1" name="vector&lt;PEC&gt;" isAbstract="false" isLeaf="false" cachedFullName="vector&lt;PEC&gt;">
+        <elementDefinition Id="70c01859-4b92-4d61-8f9f-b12eca3bfec1" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="a6487f99-45c2-4b00-adb2-f24fb2113450" name="vector&lt;*PEC&gt;" isAbstract="false" isLeaf="false" cachedFullName="vector&lt;*PEC&gt;">
+        <elementDefinition Id="a7396aa6-3d11-40e1-8485-b353cfed6488" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="546c4875-ac8b-4230-a411-38b8dd085632" name="PCB" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="03334345-b392-4b6e-934f-a30a70724941" />
+        <ownedAttributesInternal>
+          <property Id="2973d7e6-a71e-43e7-94d1-f2983b763e59" name="priority" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="44665d5e-13b8-4cc9-a1f2-5d91f99c51ad" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="1465d902-0495-4df4-a662-2729c71178d0" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+          <property Id="66beaff0-ccb1-4075-9296-f4eb61f9ef7e" name="cpuBurstT" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d63f4105-3879-4199-a724-9e51d00e9b5f" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="9e8341a7-62cd-44bf-93e7-755d2f9b7ee4" LastKnownName="vector&lt;double&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="fd43ce49-e089-4c27-a7ee-4d79acd1cbce" name="ioBurstT" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="24acbe6a-cbe7-4186-b8c1-5d68d5a454d0" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="9e8341a7-62cd-44bf-93e7-755d2f9b7ee4" LastKnownName="vector&lt;double&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="3e4ba437-3e0d-40d6-a112-75d505a68ca9" name="programCounter" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a1fc7afc-59a6-423f-9fd4-2ab31f30edcf" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="ad506011-4178-403c-9a9a-5bf77df2115e" LastKnownName="long int" />
+            </type_NamedElement>
+          </property>
+          <property Id="10de0f38-fa8b-4d05-9718-f198e6c002a9" name="timeLimit" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="39e323d6-2250-40c3-8527-df7d59832191" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="022b3e58-b25d-4978-8fe9-cf847e96c9c7" LastKnownName="double" />
+            </type_NamedElement>
+          </property>
+          <property Id="4d6126a6-8b91-4c3d-a821-f54ad979b70e" name="arrivalTime" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1895331f-2273-479b-a228-20bc6848edba" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="022b3e58-b25d-4978-8fe9-cf847e96c9c7" LastKnownName="double" />
+            </type_NamedElement>
+          </property>
+          <property Id="f021db22-fcf8-42e9-95b4-1aecf8486def" name="burstTimeMap" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="aae9d39c-f699-435b-808e-285b2609d66d" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="e48da2bd-2f5c-4e6f-aa70-adf2ef72782d" LastKnownName="map&lt;double,double&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="2d392d01-70ae-4ca0-afa7-7369c3bf3fba" name="totalTime" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="bac52fcc-c991-41c0-817b-2fc31f73534e" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="022b3e58-b25d-4978-8fe9-cf847e96c9c7" LastKnownName="double" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="da20a8f6-e423-4b3b-aedc-e408cc83c1cc" name="getAccumulatedTime" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3627c7d1-9f4a-4654-bf02-a3ac7819a848" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="e8ae0ef7-26f4-4195-9055-50088c8589da" direction="Return" isUnique="false">
+                  <elementDefinition Id="c1b14fae-91a4-4dba-94f4-ba1408cb96f7" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="022b3e58-b25d-4978-8fe9-cf847e96c9c7" LastKnownName="double" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a83186da-33ff-456e-a768-7d717c3ac343" name="PEC" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3b213055-7b88-4de7-8bc3-0c6cb63e8ca1" />
+        <targetEnds>
+          <association Id="b8230f33-86f1-44dc-a51f-16f6ca3f3711" isDerived="false" sourceEndRoleName="PEC" targetEndRoleName="PCB" isLeaf="false" isAbstract="false">
+            <classMoniker Id="546c4875-ac8b-4230-a411-38b8dd085632" LastKnownName="PCB" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0eeee773-9250-4679-83b9-07ae70494efc" name="PEC" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="af414e34-8dcc-460f-9f9a-eb9879f0519f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2cf58456-422d-407b-8c7a-7560d9179ca7" name="PCB" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="6edbfaa9-6fc2-423c-a9e7-d5470b960d27" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a85a59b3-8b53-4423-aaf2-2ef844591970" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="7ab7905d-b6cc-4c01-b431-a3e1db6f612a" name="processControlBlock" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d86cc6fc-f1a4-4dca-9371-a9ac6a367f10" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="bc3d6e9b-7620-40f3-b5c0-f5cbedb3035e" LastKnownName="SimProj::PCB" />
+            </type_NamedElement>
+          </property>
+          <property Id="3a6a04d0-0909-4205-bb1c-1ccccc22d42f" name="PID" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3fb5806e-0c09-4325-b7d6-75af7c386cab" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="02c92afa-9c60-4681-871c-cfcb991ec697" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+          <property Id="7882271d-23f6-4831-aa47-5de6e0fb4c36" name="State" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e62adc0d-657f-40e1-8233-eacf0f24d8b3" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="5be87ecc-34aa-4b67-a8fc-be22629be9e4" LastKnownName="enum" />
+            </type_NamedElement>
+          </property>
+          <property Id="5065d23e-fea7-4ca6-9538-0944244044ac" name="textRegion" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="af0e46ec-8ec3-4493-b8b8-9487799c2f30" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="8c2252df-7f96-4485-a644-0b76b56a5e30" LastKnownName="String[]" />
+            </type_NamedElement>
+          </property>
+          <property Id="241797fb-eb82-4e06-84f6-398a7f16219c" name="dataRegion" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="cdde9dc1-836a-4d60-b2b8-3b67610cd56d" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d5a25277-e1df-423e-b2ff-f119841205e3" name="Main" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="17481ab6-8060-4cba-b07f-e3a5d16f5e3a" />
+        <targetEnds>
+          <association Id="84c9025a-9044-4741-9a40-330c1fc9d528" isDerived="false" sourceEndRoleName="Main" targetEndRoleName="Generate File" isLeaf="false" isAbstract="false">
+            <classMoniker Id="223729e5-cea4-4cb9-9589-161a45d7c4ee" LastKnownName="Generate data File" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="db99df85-a22a-4e74-b3f2-3bc6ce6a9068" name="Main" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d8dabdf8-2386-4958-b387-dd2c415a2914" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="05bed1de-1951-48b4-a064-b05d76fe731f" name="Generate File" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="143dd02d-3d6d-4896-bad2-6a4bd9f2e7d5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="920c588b-a54c-48eb-97a5-8d920d9a8599" />
+          </association>
+          <association Id="507a0833-44df-4f95-978d-1a2cb0a2d634" isDerived="false" sourceEndRoleName="Main" targetEndRoleName="PEC" isLeaf="false" isAbstract="false">
+            <classMoniker Id="a83186da-33ff-456e-a768-7d717c3ac343" LastKnownName="PEC" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="dd910b84-d710-407a-b3a7-35451e39c2ba" name="Main" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6ecfa247-6260-4b65-aee8-00ecb9373948" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6e3c1824-c015-451d-a524-2329e50e381c" name="PEC" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="5864f770-2681-4334-a8ee-ea78e2fb0bda" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0d607df0-0038-48f0-91cf-d705c98d08ff" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="a2e5ac0b-a96d-4d28-822f-21ab4d4c7aaf" name="currentProcessTable" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="bf5de12d-4f25-4d56-95cb-ed87ae4ef260" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="ff9916d5-c2d0-4359-810f-910c17f40f80" LastKnownName="map &lt;int,*PCB&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="3805d21f-6152-473a-85eb-cf1fc35be2c6" name="readyQueue" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6ffea0e7-3f56-4296-9aad-365c93769092" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="ceeb62e0-0d22-4658-8b64-af5b5750535d" LastKnownName="queue&lt;*PEC&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="ea384552-bf1d-4188-a31e-bb5d514a1f9d" name="processors" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4a23a59f-c877-4508-9cee-cfb2f93e9acd" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="6b5b3641-ef47-46a6-841e-018b28a3f342" LastKnownName="*PEC[]" />
+            </type_NamedElement>
+          </property>
+          <property Id="ce138648-4efa-467d-a58f-b8bb00dc5173" name="allProcesses" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="73e59853-81c1-4fd9-bbe3-829d98eea445" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="79ee5a71-54cc-47c8-ba85-2602605349d1" LastKnownName="vector&lt;PEC&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="02d53436-6aa9-4756-92d0-6ebb004910cf" name="waitingQueue" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="55e85552-8a68-428d-966d-4177dba2bc9b" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="ceeb62e0-0d22-4658-8b64-af5b5750535d" LastKnownName="queue&lt;*PEC&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="e4b52414-50fc-4676-aad8-79c3bb5d58d1" name="completedProcesses" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5c7e0f2d-a3cb-4a5d-b21c-eb2903eb5a0e" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="a6487f99-45c2-4b00-adb2-f24fb2113450" LastKnownName="vector&lt;*PEC&gt;" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="ec1079df-d840-4f69-afc3-78c206f064d0" name="RRScheduling:void" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3be45131-8b73-4f4e-83f8-7e2873ba32ee" />
+          </operation>
+          <operation Id="c5b1b1d8-a110-417b-a76b-b9885e9c5fef" name="FCFSScheduling:void" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8abe02d9-07fc-4af6-b194-b727106c77fd" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="223729e5-cea4-4cb9-9589-161a45d7c4ee" name="Generate data File" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c594b8cf-1f6d-4075-9f43-52a9a291b4fd" />
+        <ownedOperationsInternal>
+          <operation Id="ea4afc86-ec00-4ae3-9261-42a156c43147" name="GenFile:void" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="17de42d3-c514-4e77-aa94-6a926446e7ab" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="15fcc996-3a3c-4d3a-95e1-b8610efe00ee" name="UMLSimProj">
+    <elementDefinition Id="2a62687f-0bfd-4a44-af38-a83a18ea2ef5" />
+  </package>
+</logicalClassDesignerModel>
