@@ -29,5 +29,8 @@
     <ClInclude Include="DataFileGen.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="TempAnalysisFunctions.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

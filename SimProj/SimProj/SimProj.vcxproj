@@ -148,6 +148,7 @@
     <ClInclude Include="DataFileGen.h" />
     <ClInclude Include="PCB.h" />
     <ClInclude Include="PEC.h" />
+    <ClInclude Include="TempAnalysisFunctions.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

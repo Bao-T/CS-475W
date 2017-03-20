@@ -1,14 +1,13 @@
+#pragma once
 #include <iostream>
+#include "PCB.h"
+#include "PEC.h"
 #include "DataFileGen.h"
 #include "PCB.h"
 #include "PEC.h"
 #include <vector>
 #include <map>
 #include <queue>
-using std::vector;
-using std::cout;
-using std::map;
-
 
 vector<PEC> allProcesses;
 vector<PEC*> completedProcesses;
@@ -17,31 +16,7 @@ queue<PEC*> readyQueue;
 queue<PEC*> waitingQueue;
 PEC* processors[4];
 
-
-int main()
-{
-	genDataFile();
-
-
-}
-
-void loadScheduler()
-{
-	if (readyQueue.empty()){}
-	else
-	{
-		
-
-
-
-	}
-}
- 
-void fBQueue()
+void analysis()
 {
 	
-
-
 }
-
-

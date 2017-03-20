@@ -9,6 +9,9 @@ private:
 	long int programCounter;
 	double timeLimit;
 	double arrivalTime;
+	double waitTime;
+	double endTime;
+	double throughput; // reseaarch
 
 public:
 	std::map <double, double> burstTimeMap;
@@ -21,6 +24,7 @@ public:
 		arrivalTime = a1;
 	}
 
+	void setTimeLimit(double t1) { timeLimit = t1; }// bao was here
 	void setCPUBurst(double cpu) {
 		cpuBurstT.push_back(cpu);
 	}
