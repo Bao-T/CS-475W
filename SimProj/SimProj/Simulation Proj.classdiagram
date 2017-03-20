@@ -1,19 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="358c044f-3ebd-47d1-841a-bbcb7847d22c" name="Simulation Proj" linkedPackageId="0f10e620-67ec-44ed-8168-05d6ee9d09d5" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="2ca44811-14e2-4856-8bd2-23ae19124ca8">
-      <profileInstance Id="96a72856-cb5f-41b8-8854-7f76d213c4f2" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="f979e7fa-9d16-4e09-b922-ced6e1cc1cd8">
-      <profileInstance Id="d36996f5-4082-4795-9858-eb04f28f88fe" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="358c044f-3ebd-47d1-841a-bbcb7847d22c" name="Simulation Proj" linkedPackageId="0f10e620-67ec-44ed-8168-05d6ee9d09d5" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <class Id="96c3157a-5bca-4fd9-b6ef-dc81f6ea9f71" name="PCB" isAbstract="false" isLeaf="false" isActiveClass="false">
@@ -49,7 +35,40 @@
               <referencedTypeMoniker Id="c6590a78-6c08-46ff-b0d0-8cc3af609639" LastKnownName="double" />
             </type_NamedElement>
           </property>
+          <property Id="c1847c43-c5b2-4fe6-b9dd-03f035899f28" name="arrivalTime" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4c6a02ba-b825-469e-add1-c9b2fcea9ddd" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c6590a78-6c08-46ff-b0d0-8cc3af609639" LastKnownName="double" />
+            </type_NamedElement>
+          </property>
+          <property Id="00d4e4d0-379e-4186-8747-702bf1580271" name="burstTimeMap" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="df030530-aafa-485a-b714-cb97ec0ef362" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="a87d8e15-11e5-4efa-be90-6eb9e2727e32" LastKnownName="map&lt;double,double&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="7dde68fd-4d68-4ab3-830e-8c5282b24039" name="totalTime" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ec854918-747d-4767-ac34-aaf5a36929ae" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c6590a78-6c08-46ff-b0d0-8cc3af609639" LastKnownName="double" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="5e10550b-e94e-41d6-9c9a-155709de823d" name="getAccumulatedTime" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f255edda-eba5-4482-9109-fb96eb059a2d" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="ede5cbee-e516-4b94-87c2-aa74b88f0bca" direction="Return" isUnique="false">
+                  <elementDefinition Id="dcf0ff48-0592-470e-b80e-a762e4ab86ac" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="c6590a78-6c08-46ff-b0d0-8cc3af609639" LastKnownName="double" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <packageHasNamedElement>
@@ -149,7 +168,7 @@
         <elementDefinition Id="aacd262d-fe66-4189-817e-8a5af63be147" />
         <targetEnds>
           <association Id="e8bbf306-50c4-4123-aa45-1caaa5c362c1" isDerived="false" sourceEndRoleName="Main" targetEndRoleName="Generate File" isLeaf="false" isAbstract="false">
-            <classMoniker Id="be60c221-af21-4513-bde3-ee2c08a6496c" LastKnownName="Generate File" />
+            <classMoniker Id="be60c221-af21-4513-bde3-ee2c08a6496c" LastKnownName="Generate data File" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="fc4602ab-d3b6-4988-bf74-a49c086ba4ff" name="Main" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
@@ -182,27 +201,109 @@
           </association>
         </targetEnds>
         <ownedAttributesInternal>
-          <property Id="eb84b67f-aece-4906-8c8d-6d00b198ef65" name="processTable" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="eb84b67f-aece-4906-8c8d-6d00b198ef65" name="currentProcessTable" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="88584666-e590-4b32-8031-12a40af4bd13" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="80457e35-8a30-49f5-8929-e1256d0f9202" LastKnownName="map &lt;int,PCB&gt;" />
+              <referencedTypeMoniker Id="384e9dbe-5017-483b-967f-70e02ec24ded" LastKnownName="map &lt;int,*PCB&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="7adffe3d-9132-4c3b-ab73-60acad4dfd75" name="readyQueue" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="98d1b052-86c5-4e69-baba-b438a49c1452" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4125ce76-f594-4575-86c9-0c5671cfde59" LastKnownName="queue&lt;*PEC&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="0cb9ee12-82f9-4674-9538-ddd86efd34a4" name="processors" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1ef8eabd-8f1f-437e-9797-717f640a3a83" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="3f7d8129-1c93-4ba1-bde0-c738053c78da" LastKnownName="*PEC[]" />
+            </type_NamedElement>
+          </property>
+          <property Id="65b60c52-52ea-4e58-8fc4-e40e33c3d7c7" name="allProcesses" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9f1fb3d0-c0b8-414d-a13e-01e39d66d546" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="7343ef86-70ed-40a5-a525-4e37cb4c2ec2" LastKnownName="vector&lt;PEC&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="3d6f4707-3071-4e2f-83d0-820ce70ba596" name="waitingQueue" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f8d52397-dbd3-4c64-b73d-9b2adf143a80" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4125ce76-f594-4575-86c9-0c5671cfde59" LastKnownName="queue&lt;*PEC&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="c7ffb25d-46cb-4870-9a14-674c489372ca" name="completedProcesses" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e18e959c-767e-4de4-ba90-3d15a1590f90" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="152a3a58-4c31-4370-8a68-cee79bff856b" LastKnownName="vector&lt;*PEC&gt;" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="0014ce9d-353b-4859-aa49-34682ce85ee2" name="RRScheduling:void" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9a44d8ac-77a4-46ac-abc8-e9c8d1c4cae7" />
+          </operation>
+          <operation Id="3521b9d4-e611-4f14-b5be-48ae83e58c50" name="FCFSScheduling:void" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="72fbb232-9345-4bd5-878e-d50e08dbca3e" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="be60c221-af21-4513-bde3-ee2c08a6496c" name="Generate data File" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d5f08081-6c10-44a1-9f07-c0c5a8a7d863" />
+        <ownedOperationsInternal>
+          <operation Id="b811c077-e108-4a87-8469-75a03615f263" name="GenFile:void" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="56990714-4747-4f9a-8759-8dd23038827f" />
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <packageHasNamedElement>
-      <referencedType Id="80457e35-8a30-49f5-8929-e1256d0f9202" name="map &lt;int,PCB&gt;" isAbstract="false" isLeaf="false" cachedFullName="map &lt;int,PCB&gt;">
-        <elementDefinition Id="372c59bf-1835-4217-a191-1073b9b2a03f" />
+      <referencedType Id="a87d8e15-11e5-4efa-be90-6eb9e2727e32" name="map&lt;double,double&gt;" isAbstract="false" isLeaf="false" cachedFullName="map&lt;double,double&gt;">
+        <elementDefinition Id="74e6dd80-4f33-4f26-9e6c-4389d0b2b114" />
       </referencedType>
     </packageHasNamedElement>
-    <logicalClassDesignerModelHasTypes>
-      <class Id="be60c221-af21-4513-bde3-ee2c08a6496c" name="Generate File" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="d5f08081-6c10-44a1-9f07-c0c5a8a7d863" />
-      </class>
-    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="4125ce76-f594-4575-86c9-0c5671cfde59" name="queue&lt;*PEC&gt;" isAbstract="false" isLeaf="false" cachedFullName="queue&lt;*PEC&gt;">
+        <elementDefinition Id="f36cc0cf-a81d-44c5-9f14-1f7b5ec340a0" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="7343ef86-70ed-40a5-a525-4e37cb4c2ec2" name="vector&lt;PEC&gt;" isAbstract="false" isLeaf="false" cachedFullName="vector&lt;PEC&gt;">
+        <elementDefinition Id="a4760169-77a2-4208-b4c0-e7f7e70928e3" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="384e9dbe-5017-483b-967f-70e02ec24ded" name="map &lt;int,*PCB&gt;" isAbstract="false" isLeaf="false" cachedFullName="map &lt;int,*PCB&gt;">
+        <elementDefinition Id="fddacaae-6ad8-4b75-a2b1-6508fe763eae" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="3f7d8129-1c93-4ba1-bde0-c738053c78da" name="*PEC[]" isAbstract="false" isLeaf="false" cachedFullName="*PEC[]">
+        <elementDefinition Id="e5c73444-4ce4-4b1f-8979-3cd8f8d610c4" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="152a3a58-4c31-4370-8a68-cee79bff856b" name="vector&lt;*PEC&gt;" isAbstract="false" isLeaf="false" cachedFullName="vector&lt;*PEC&gt;">
+        <elementDefinition Id="ced1dcb4-b156-42f6-8db4-6e18defcdbed" />
+      </referencedType>
+    </packageHasNamedElement>
   </packagedElements>
   <package Id="0f10e620-67ec-44ed-8168-05d6ee9d09d5" name="SimProj">
     <elementDefinition Id="c98bc793-d648-4c5b-a1c2-1a6715be3214" />
+    <profileInstances>
+      <packageHasProfileInstances Id="2ca44811-14e2-4856-8bd2-23ae19124ca8">
+        <profileInstance Id="96a72856-cb5f-41b8-8854-7f76d213c4f2" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="f979e7fa-9d16-4e09-b922-ced6e1cc1cd8">
+        <profileInstance Id="d36996f5-4082-4795-9858-eb04f28f88fe" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>
