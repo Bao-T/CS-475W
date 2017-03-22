@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <map>
 #include <string>
 #include "PCB.h"
 
@@ -8,7 +9,6 @@ using namespace std;
 class PEC {
 
 private:
-	int PID;
 	int processControlBlock;
 
 
@@ -21,11 +21,19 @@ public:
 	int returnPCB()
 	{
 		return processControlBlock;
+
 	}
 
-	int returnPID()
+	map <int, PCB> PID;
+
+	PEC(int x, PCB y)
 	{
-		return PID;
+		PID[x] = processControlBlock;
+		
+		PID[x, y];
+
 	}
+
+	
 
 };
