@@ -4,36 +4,23 @@
 #include <string>
 #include "PCB.h"
 
-using namespace std;
-
 class PEC {
-
 private:
 	int processControlBlock;
-
 
 public:
 	enum State;
 
-	vector<int> dataRegion;
-	vector<string> textregion;
+	std::map <int, PCB> PID;
+	std::vector<int> dataRegion;
+	std::vector<std::string> textregion;
 
-	int returnPCB()
-	{
+	int returnPCB() {
 		return processControlBlock;
 
 	}
 
-	map <int, PCB> PID;
-
-	PEC(int x, PCB y)
-	{
-		PID[x] = processControlBlock;
-		
-		PID[x, y];
-
+	PEC(int x, PCB y) {
+		PID[x] = y;
 	}
-
-	
-
 };
