@@ -76,11 +76,11 @@ int main()
 {
 	genDataFile();
 	loadDataFile();
-	//while(!PECList.empty())
-	//{
-	//	cout << PECList.top()->getPCB().arrivalTime << endl;
-	//	PECList.pop();
-	//}
+	while(!PECList.empty())
+	{
+		cout << PECList.top()->getPCB().arrivalTime << endl;
+		PECList.pop();
+	}
 
 
 }
