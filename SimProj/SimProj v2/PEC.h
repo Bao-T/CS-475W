@@ -23,6 +23,8 @@ private:
 	double PID;
 public:
 	State state = none;
+	int inProcessor;
+	int inFBQueue;
 	PEC::PEC(int id, double arr, vector<double> bursts)
 	{
 		PID = id;
@@ -43,6 +45,9 @@ public:
 	{
 		pcb.waitTotalTime += length;
 	}
-
+	void setEndTime()
+	{
+		pcb.endTime = pcb.arrivalTime + pcb.executionTotalTime + pcb.waitTotalTime;
+	}
 
 };
