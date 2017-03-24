@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimProj", "SimProj\SimProj.
 EndProject
 Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "UMLSimProj", "UMLSimProj\UMLSimProj.modelproj", "{2332E77A-4BF2-4918-A616-58E4D153B6E6}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimProj v2", "SimProj v2\SimProj v2.vcxproj", "{7EAFC2D2-C5C1-49D0-9DCF-84C773C246ED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,16 @@ Global
 		{2332E77A-4BF2-4918-A616-58E4D153B6E6}.Release|x64.Build.0 = Release|Any CPU
 		{2332E77A-4BF2-4918-A616-58E4D153B6E6}.Release|x86.ActiveCfg = Release|Any CPU
 		{2332E77A-4BF2-4918-A616-58E4D153B6E6}.Release|x86.Build.0 = Release|Any CPU
+		{7EAFC2D2-C5C1-49D0-9DCF-84C773C246ED}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{7EAFC2D2-C5C1-49D0-9DCF-84C773C246ED}.Debug|x64.ActiveCfg = Debug|x64
+		{7EAFC2D2-C5C1-49D0-9DCF-84C773C246ED}.Debug|x64.Build.0 = Debug|x64
+		{7EAFC2D2-C5C1-49D0-9DCF-84C773C246ED}.Debug|x86.ActiveCfg = Debug|Win32
+		{7EAFC2D2-C5C1-49D0-9DCF-84C773C246ED}.Debug|x86.Build.0 = Debug|Win32
+		{7EAFC2D2-C5C1-49D0-9DCF-84C773C246ED}.Release|Any CPU.ActiveCfg = Release|Win32
+		{7EAFC2D2-C5C1-49D0-9DCF-84C773C246ED}.Release|x64.ActiveCfg = Release|x64
+		{7EAFC2D2-C5C1-49D0-9DCF-84C773C246ED}.Release|x64.Build.0 = Release|x64
+		{7EAFC2D2-C5C1-49D0-9DCF-84C773C246ED}.Release|x86.ActiveCfg = Release|Win32
+		{7EAFC2D2-C5C1-49D0-9DCF-84C773C246ED}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
