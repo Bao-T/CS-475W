@@ -21,13 +21,12 @@ struct Comp
 		return a->getPCB().arrivalTime > b->getPCB().arrivalTime;
 	}
 };
-priority_queue<PEC*, vector<PEC*>, Comp> PECList;
-vector<PEC*> PECComplete;
-//map<int, PCB*> currentProcessTable;
-vector<PEC*> PECReadyQueue;
-//pair<PEC*, double> nextEvent;
-double currentTime;
-
+struct CompBurst
+{
+	bool operator()(const PEC* a, const PEC* b) {
+		return a->getPCB().BurstList.front() > b->getPCB().BurstList.front();
+	}
+};
 struct Processor
 {
 public:
@@ -37,20 +36,50 @@ public:
 	double executionTimeNeeded;
 	double processorTimeAllowed = 0;
 };
+priority_queue<PEC*, vector<PEC*>, Comp> PECList;
+vector<PEC*> PECComplete;
+//map<int, PCB*> currentProcessTable;
+vector<PEC*> PECReadyQueue;
+//pair<PEC*, double> nextEvent;
+double currentTime;
 
+void FCFS(PEC* nextE, const Processor &processor)
+{
+	nextE->state = waiting;
+	for (auto fbQ : processor[nextE->inProcessor].FBQueue)
+	{
+		for (auto proc : fbQ)
+		{
+			if (proc != nextE)
+			{
+				proc->increaseWaitTimeTotal(proc->getPCB().BurstList.front()); // increase wait for all other processes
+			}
+			else
+			{
+				proc->increaseExecutionTimeTotal(proc->getPCB().BurstList.front()); // increase execution time
+			}
+		}
+		nextE->getPCB().BurstList.pop(); // remove execution time from list.
+	}
+	if (nextE->getPCB().BurstList.empty())
+	{
+		nextE->setEndTime();
+		PECComplete.push_back(nextE);
+		processor[nextE->inProcessor].FBQueue[nextE->inFBQueue].erase(remove(processor[nextE->inProcessor].waitingQueue.begin(), processor[nextE->inProcessor].waitingQueue.end(), nextE), processor[nextE->inProcessor].waitingQueue.end());
 
-//Have no idea if this is correct
-void FCFS(PEC &PEC, int currentprocess, int currentqueue) {
-	if (PECReadyQueue[0].getPCB().executionTotalTime == 0) {
-		PECComplete.push_back(PECReadyQueue[0].getPCB().erase);
+	}
+	else
+	{
+		processor[nextE->inProcessor].waitingQueue.push_back(nextE);
+		processor[nextE->inProcessor].FBQueue[nextE->inFBQueue].erase(remove(processor[nextE->inProcessor].waitingQueue.begin(), processor[nextE->inProcessor].waitingQueue.end(), nextE), processor[nextE->inProcessor].waitingQueue.end());
+	}
+	for (auto fbQ : processor[nextE->inProcessor].FBQueue)
+	{
+		if (!fbQ.empty())
+		{
+			processor[nextE->inProcessor].CurrProccess = fbQ[0];
+			break;
+		}
 	}
 
-	else if (PECReadyQueue[0].getPCB().executionTotalTime > 0) {
-		PECReadyQueue[0].getPCB().waitTotalTime + randBurst();
-		PECReadyQueue[0].getPCB().executionTotalTime - randBurst();
-	}
-
-	for (int i = 0; i < PECReadyQueue.size(); i++) {
-		PECReadyQueue[i].waitTotaltime + randBurst();
-	}
 }
